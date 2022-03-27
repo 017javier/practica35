@@ -1,0 +1,103 @@
+@import 'config/variable';
+@import 'sass/header';
+@import 'sass/home';
+@import 'sass/about';
+@import 'sass/skills';
+@import 'sass/servicios';
+@import 'sass/trabajos';
+@import 'sass/testimonial';
+@import 'sass/contactos';
+@import 'sass/footer';
+
+// base
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body,
+button,
+input,
+textarea{
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+}
+body{
+    background-color: var(--body-color);
+    color: var(--text-color);
+    transition: .4s;
+}
+h1,h2,h3{
+    color: var(--title-color);
+    font-weight: var(--font-semibold);
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+button{
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/* clases reusables */
+.container{
+    max-width: 968px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.grid{
+    display: grid;
+    gap: 1.25rem;
+}
+.main{
+    overflow: hidden;
+}
+.section{
+    padding: 4.5rem 0 1rem;
+}
+.section__title,
+.section__subtitle{
+    text-align: center;
+}
+.section__title{
+    font-size: var(--h2-font-size);
+    color: var(--primary);
+    margin-bottom: 2rem;
+}
+.section__subtitle{
+    display: block;
+    font-size: var(--smaller-font-size);
+    color: #fff;
+}
+
+/* ========BREAKPONITS========= */
+@media screen and (min-width: 992px){
+    .container{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .section{
+        padding: 6.5rem 0 1rem;
+    }
+    .section__title{
+        margin-bottom: 3.5rem;
+    }
+    .nav{
+        height: calc(3.5rem + 1rem);
+    }
+}
+
+
+
+

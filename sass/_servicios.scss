@@ -1,0 +1,118 @@
+.services__container{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    padding-top: 1rem;
+}
+.services__card{
+    background-color: var(--container-color);
+    padding: 3rem 1.5rem 1.5rem;
+    border-radius: 1rem;
+}
+.services__title{
+    font-size: var(--h3-font-size);
+    margin-bottom: 2rem;
+}
+.services__button{
+    color: var(--primary);
+    font-size: var(--small-font-size);
+    display: flex;
+    align-items: center;
+    column-gap: .25rem;
+    cursor: pointer;
+}
+.services__button:hover .services__icon{
+    transform: translateX(.25rem);
+}
+.services__icon{
+    font-size: 1rem;
+    transition: .4s;
+}
+
+/* servicios modal */
+.services__modal{
+    position: fixed;
+    inset: 0;
+    background-color: hsla(219, 28%, 16%, .7);
+    padding: 2rem 1rem;
+    display: grid;
+    place-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: .4s;
+    z-index: var(--z-modal);
+}
+.services__modal-content{
+    position: relative;
+    background-color: var(--body-color);
+    padding: 4.5rem 1.5rem 2.5rem;
+    border-radius: 1.5rem;
+}
+.services__modal-title,
+.services__modal-description{
+    text-align: center;
+}
+.services__modal-title{
+    font-size: var(--h3-font-size);
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+.services__modal-description{
+    font-size: var(--small-font-size);
+    margin-bottom: 2rem;
+}
+.services__modal-list{
+    display: grid;
+    row-gap: .75rem;
+}
+.services__modal-item{
+    display: flex;
+    align-items: flex-start;
+    column-gap: .5rem;
+}
+.services__modal-icon{
+    font-size: 1.5rem;
+    color: var(--primary);
+}
+.services__modal-info{
+    font-size: var(--small-font-size);
+}
+.services__modal-close{
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    font-size: 1.5rem;
+    color: var(--primary);
+}
+// activar modal
+.active-modal{
+    opacity: 1;
+    visibility: visible;
+}
+/* ========BREAKPONITS========= */
+@media screen and (max-width: 320px){
+    .services__container{
+        grid-template-columns: 145px;
+        justify-content: center;
+    }
+}
+/* ========BREAKPONITS========= */
+@media screen and (min-width: 576px){
+    .services__container{
+        grid-template-columns: repeat(2, 160px);
+        justify-content: center;
+    }
+    .services__modal-content{
+        width: 500px;
+        padding: 4.5rem 2.5rem 2.5rem;
+    }
+}
+/* ========BREAKPONITS========= */
+@media screen and (min-width: 992px){
+    .services__container{
+        grid-template-columns: repeat(3, 195px);
+        column-gap: 3rem;
+    }
+    .services__card{
+        padding: 5rem 2rem 1.5rem;
+    }
+}
