@@ -2,10 +2,9 @@
     row-gap: 2.5rem;
 }
 .about__img{
-    width: 220px;
-    
-    border-radius: 1.5rem;
     justify-self: center;
+    width: 220px;
+    border-radius: 1.5rem;
 }
 .about__data{
     text-align: center;
@@ -17,9 +16,9 @@
     margin-bottom: 2rem;
 }
 .about__box{
+    padding: .75rem .5rem;
     background-color: var(--container-color);
     border-radius: .75rem;
-    padding: .75rem .5rem;
 }
 .about__icon{
     font-size: 1.5rem;

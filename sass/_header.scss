@@ -8,10 +8,10 @@ header{
     transition: .4s;
 }
 nav{
-    height: 3.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 3.5rem;
 }
 .nav__logo{
     color: var(--primary);
@@ -37,11 +37,11 @@ nav{
     align-items: center;
 }
 .nav__link{
+    display: flex;
+    padding: .4rem;
+    border-radius: 5rem;
     color: var(--text-color);
     font-size: 1.25rem;
-    padding: .4rem;
-    display: flex;
-    border-radius: 5rem;
 }
 /* active link */
 .active-link{
